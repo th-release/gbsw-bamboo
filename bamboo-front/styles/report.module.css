@@ -1,0 +1,11 @@
+.report_Form {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border-radius: 7.5px;
+}
+
+.captcha_content {
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+  font-family: "Spoqa Han Sans", sans-serif;
+}

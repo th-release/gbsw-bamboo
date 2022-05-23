@@ -1,0 +1,219 @@
+body {
+  background: #202b38;
+  transition: background-color 0.5s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  color: #dbdbdb;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, th {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: #ffffff;
+}
+
+.flex_w_100 {
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  -webkit-box-pack: center;
+}
+
+.title h1 {
+  display: inline;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  font-size: 2.2em;
+}
+
+.title h1 span {
+  font-size: 14px;
+}
+
+.nav_items {
+  margin: auto 0;
+}
+
+.nav_items a, .nav_items Link {
+  font-size: 18px;
+  font-family: 'Spoqa Han Sans',sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #0076d1;
+  transition: color 0.5s;
+}
+
+.card, .modal, .overlay, form {
+  background-color: #253542;
+}
+
+.overlay {
+  position: relative;
+  max-width: 700px;
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 5vh auto;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 16px 36px -12px;
+  background-color: #253542;
+}
+
+.report_overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  line-height: 1.4;
+  color: #dbdbdb;
+  text-rendering: optimizeLegibility;
+}
+
+.overlay_open {
+  transition: opacity 0.25s ease 0s;
+  opacity: 1;
+}
+
+.overlay_close {
+  transition: opacity 0.25s ease 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close_icon {
+  cursor: pointer;
+  float: right;
+  opacity: 0.7;
+  font-size: x-large;
+}
+
+.report_input {
+  width: 80%;
+  min-width: 250px;
+  display: inline-block !important;
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+  color: #a9a9a9;
+}
+
+input, select, textarea, button {
+  background-color: #161f27;
+}
+
+input, select, button, textarea {
+  color: #ffffff;
+  background-color: #161f27;
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+button, input, textarea {
+  transition: 
+    background-color 0.1s linear, 
+    border-color 0.1s linear, color 0.1s linear, 
+    box-shadow 0.1s linear, 
+    transform 0.1s ease;
+}
+
+textarea {
+  font-size: 16px;
+  height: 5rem;
+  transition: all 0.25s ease-out 0s;
+  resize: none;
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  height: 15rem;
+}
+
+button, input[type="submit"], input[type="button"] {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), select, button, textarea {
+  -webkit-appearance: none;
+}
+
+button, input[type="submit"], input[type="button"], input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button:hover, .sumbit:hover {
+  background-color: #36485c;
+}
+
+select {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 6px 0;
+  flex: 1;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+a, strong {
+  color: #0076d1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.policy_Link:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border-color: #161f27 !important;
+}
+
+ol {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ol li {
+  margin-left: 1rem;
+}
